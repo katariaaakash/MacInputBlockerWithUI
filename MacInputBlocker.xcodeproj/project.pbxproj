@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6A1749B21865BB000C144BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A1749A21865BB000C144BE /* AppDelegate.swift */; };
+		D6A1749D21865BB000C144BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A1749C21865BB000C144BE /* ViewController.swift */; };
+		D6A1749F21865BB200C144BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6A1749E21865BB200C144BE /* Assets.xcassets */; };
+		D6A174A221865BB200C144BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6A174A021865BB200C144BE /* Main.storyboard */; };
+		D6A174AE21865BB200C144BE /* MacInputBlockerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A174AD21865BB200C144BE /* MacInputBlockerTests.swift */; };
+		D6A174B921865BB200C144BE /* MacInputBlockerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A174B821865BB200C144BE /* MacInputBlockerUITests.swift */; };
+		D6A174C92186609100C144BE /* ConfigConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A174C72186609000C144BE /* ConfigConstants.swift */; };
+		D6A174CA2186609100C144BE /* InputConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A174C82186609100C144BE /* InputConfig.swift */; };
+		D6A174CD218660A600C144BE /* InputBlocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A174CC218660A600C144BE /* InputBlocker.swift */; };
+		D6A174D1218660BE00C144BE /* ScreenTimeOutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A174CF218660BE00C144BE /* ScreenTimeOutManager.swift */; };
+		D6A174D2218660BE00C144BE /* PassphraseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A174D0218660BE00C144BE /* PassphraseManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6A174AA21865BB200C144BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6A1748F21865BB000C144BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6A1749621865BB000C144BE;
+			remoteInfo = MacInputBlocker;
+		};
+		D6A174B521865BB200C144BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6A1748F21865BB000C144BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6A1749621865BB000C144BE;
+			remoteInfo = MacInputBlocker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D6A1749721865BB000C144BE /* MacInputBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacInputBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6A1749A21865BB000C144BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D6A1749C21865BB000C144BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6A1749E21865BB200C144BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6A174A121865BB200C144BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6A174A321865BB200C144BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6A174A421865BB200C144BE /* MacInputBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacInputBlocker.entitlements; sourceTree = "<group>"; };
+		D6A174A921865BB200C144BE /* MacInputBlockerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacInputBlockerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6A174AD21865BB200C144BE /* MacInputBlockerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacInputBlockerTests.swift; sourceTree = "<group>"; };
+		D6A174AF21865BB200C144BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6A174B421865BB200C144BE /* MacInputBlockerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacInputBlockerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6A174B821865BB200C144BE /* MacInputBlockerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacInputBlockerUITests.swift; sourceTree = "<group>"; };
+		D6A174BA21865BB200C144BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6A174C72186609000C144BE /* ConfigConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigConstants.swift; sourceTree = "<group>"; };
+		D6A174C82186609100C144BE /* InputConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputConfig.swift; sourceTree = "<group>"; };
+		D6A174CC218660A600C144BE /* InputBlocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputBlocker.swift; sourceTree = "<group>"; };
+		D6A174CF218660BE00C144BE /* ScreenTimeOutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenTimeOutManager.swift; sourceTree = "<group>"; };
+		D6A174D0218660BE00C144BE /* PassphraseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassphraseManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6A1749421865BB000C144BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6A174A621865BB200C144BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6A174B121865BB200C144BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6A1748E21865BB000C144BE = {
+			isa = PBXGroup;
+			children = (
+				D6A1749921865BB000C144BE /* MacInputBlocker */,
+				D6A174AC21865BB200C144BE /* MacInputBlockerTests */,
+				D6A174B721865BB200C144BE /* MacInputBlockerUITests */,
+				D6A1749821865BB000C144BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6A1749821865BB000C144BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6A1749721865BB000C144BE /* MacInputBlocker.app */,
+				D6A174A921865BB200C144BE /* MacInputBlockerTests.xctest */,
+				D6A174B421865BB200C144BE /* MacInputBlockerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6A1749921865BB000C144BE /* MacInputBlocker */ = {
+			isa = PBXGroup;
+			children = (
+				D6A174CE218660B200C144BE /* Managers */,
+				D6A174CB2186609C00C144BE /* InputBlocker */,
+				D6A174C62186607C00C144BE /* Config */,
+				D6A1749A21865BB000C144BE /* AppDelegate.swift */,
+				D6A1749C21865BB000C144BE /* ViewController.swift */,
+				D6A1749E21865BB200C144BE /* Assets.xcassets */,
+				D6A174A021865BB200C144BE /* Main.storyboard */,
+				D6A174A321865BB200C144BE /* Info.plist */,
+				D6A174A421865BB200C144BE /* MacInputBlocker.entitlements */,
+			);
+			path = MacInputBlocker;
+			sourceTree = "<group>";
+		};
+		D6A174AC21865BB200C144BE /* MacInputBlockerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6A174AD21865BB200C144BE /* MacInputBlockerTests.swift */,
+				D6A174AF21865BB200C144BE /* Info.plist */,
+			);
+			path = MacInputBlockerTests;
+			sourceTree = "<group>";
+		};
+		D6A174B721865BB200C144BE /* MacInputBlockerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D6A174B821865BB200C144BE /* MacInputBlockerUITests.swift */,
+				D6A174BA21865BB200C144BE /* Info.plist */,
+			);
+			path = MacInputBlockerUITests;
+			sourceTree = "<group>";
+		};
+		D6A174C62186607C00C144BE /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D6A174C72186609000C144BE /* ConfigConstants.swift */,
+				D6A174C82186609100C144BE /* InputConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		D6A174CB2186609C00C144BE /* InputBlocker */ = {
+			isa = PBXGroup;
+			children = (
+				D6A174CC218660A600C144BE /* InputBlocker.swift */,
+			);
+			path = InputBlocker;
+			sourceTree = "<group>";
+		};
+		D6A174CE218660B200C144BE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D6A174D0218660BE00C144BE /* PassphraseManager.swift */,
+				D6A174CF218660BE00C144BE /* ScreenTimeOutManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6A1749621865BB000C144BE /* MacInputBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6A174BD21865BB200C144BE /* Build configuration list for PBXNativeTarget "MacInputBlocker" */;
+			buildPhases = (
+				D6A1749321865BB000C144BE /* Sources */,
+				D6A1749421865BB000C144BE /* Frameworks */,
+				D6A1749521865BB000C144BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacInputBlocker;
+			productName = MacInputBlocker;
+			productReference = D6A1749721865BB000C144BE /* MacInputBlocker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6A174A821865BB200C144BE /* MacInputBlockerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6A174C021865BB200C144BE /* Build configuration list for PBXNativeTarget "MacInputBlockerTests" */;
+			buildPhases = (
+				D6A174A521865BB200C144BE /* Sources */,
+				D6A174A621865BB200C144BE /* Frameworks */,
+				D6A174A721865BB200C144BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6A174AB21865BB200C144BE /* PBXTargetDependency */,
+			);
+			name = MacInputBlockerTests;
+			productName = MacInputBlockerTests;
+			productReference = D6A174A921865BB200C144BE /* MacInputBlockerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D6A174B321865BB200C144BE /* MacInputBlockerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6A174C321865BB200C144BE /* Build configuration list for PBXNativeTarget "MacInputBlockerUITests" */;
+			buildPhases = (
+				D6A174B021865BB200C144BE /* Sources */,
+				D6A174B121865BB200C144BE /* Frameworks */,
+				D6A174B221865BB200C144BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6A174B621865BB200C144BE /* PBXTargetDependency */,
+			);
+			name = MacInputBlockerUITests;
+			productName = MacInputBlockerUITests;
+			productReference = D6A174B421865BB200C144BE /* MacInputBlockerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6A1748F21865BB000C144BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Aakash Kataria";
+				TargetAttributes = {
+					D6A1749621865BB000C144BE = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					D6A174A821865BB200C144BE = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = D6A1749621865BB000C144BE;
+					};
+					D6A174B321865BB200C144BE = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = D6A1749621865BB000C144BE;
+					};
+				};
+			};
+			buildConfigurationList = D6A1749221865BB000C144BE /* Build configuration list for PBXProject "MacInputBlocker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6A1748E21865BB000C144BE;
+			productRefGroup = D6A1749821865BB000C144BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6A1749621865BB000C144BE /* MacInputBlocker */,
+				D6A174A821865BB200C144BE /* MacInputBlockerTests */,
+				D6A174B321865BB200C144BE /* MacInputBlockerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6A1749521865BB000C144BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6A1749F21865BB200C144BE /* Assets.xcassets in Resources */,
+				D6A174A221865BB200C144BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6A174A721865BB200C144BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6A174B221865BB200C144BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6A1749321865BB000C144BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6A174C92186609100C144BE /* ConfigConstants.swift in Sources */,
+				D6A1749D21865BB000C144BE /* ViewController.swift in Sources */,
+				D6A174CA2186609100C144BE /* InputConfig.swift in Sources */,
+				D6A1749B21865BB000C144BE /* AppDelegate.swift in Sources */,
+				D6A174D2218660BE00C144BE /* PassphraseManager.swift in Sources */,
+				D6A174CD218660A600C144BE /* InputBlocker.swift in Sources */,
+				D6A174D1218660BE00C144BE /* ScreenTimeOutManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6A174A521865BB200C144BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6A174AE21865BB200C144BE /* MacInputBlockerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6A174B021865BB200C144BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6A174B921865BB200C144BE /* MacInputBlockerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6A174AB21865BB200C144BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6A1749621865BB000C144BE /* MacInputBlocker */;
+			targetProxy = D6A174AA21865BB200C144BE /* PBXContainerItemProxy */;
+		};
+		D6A174B621865BB200C144BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6A1749621865BB000C144BE /* MacInputBlocker */;
+			targetProxy = D6A174B521865BB200C144BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D6A174A021865BB200C144BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6A174A121865BB200C144BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6A174BB21865BB200C144BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D6A174BC21865BB200C144BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D6A174BE21865BB200C144BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacInputBlocker/MacInputBlocker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacInputBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aakashkataria.MacInputBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		D6A174BF21865BB200C144BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacInputBlocker/MacInputBlocker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacInputBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aakashkataria.MacInputBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		D6A174C121865BB200C144BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacInputBlockerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aakashkataria.MacInputBlockerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacInputBlocker.app/Contents/MacOS/MacInputBlocker";
+			};
+			name = Debug;
+		};
+		D6A174C221865BB200C144BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacInputBlockerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aakashkataria.MacInputBlockerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacInputBlocker.app/Contents/MacOS/MacInputBlocker";
+			};
+			name = Release;
+		};
+		D6A174C421865BB200C144BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacInputBlockerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aakashkataria.MacInputBlockerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = MacInputBlocker;
+			};
+			name = Debug;
+		};
+		D6A174C521865BB200C144BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacInputBlockerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aakashkataria.MacInputBlockerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = MacInputBlocker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6A1749221865BB000C144BE /* Build configuration list for PBXProject "MacInputBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6A174BB21865BB200C144BE /* Debug */,
+				D6A174BC21865BB200C144BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6A174BD21865BB200C144BE /* Build configuration list for PBXNativeTarget "MacInputBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6A174BE21865BB200C144BE /* Debug */,
+				D6A174BF21865BB200C144BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6A174C021865BB200C144BE /* Build configuration list for PBXNativeTarget "MacInputBlockerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6A174C121865BB200C144BE /* Debug */,
+				D6A174C221865BB200C144BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6A174C321865BB200C144BE /* Build configuration list for PBXNativeTarget "MacInputBlockerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6A174C421865BB200C144BE /* Debug */,
+				D6A174C521865BB200C144BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6A1748F21865BB000C144BE /* Project object */;
+}
